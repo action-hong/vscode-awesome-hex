@@ -36,7 +36,13 @@
     "onStartupFinished"
   ],
   "contributes": {
-    "commands": [],
+    "commands": [
+      {
+        "command": "vscode-awesome-hex.prettierHex",
+        "title": "Prettier Hex",
+        "category": "vscode-awesome-hex"
+      }
+    ],
     "configuration": {
       "type": "object",
       "title": "vscode-awesome-hex",

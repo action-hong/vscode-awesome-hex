@@ -45,5 +45,7 @@
     "json",
     "jsonc",
     "yaml"
-  ]
+  ],
+
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
 }
