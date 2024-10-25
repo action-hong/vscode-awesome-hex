@@ -9,7 +9,11 @@
 
 <!-- configs -->
 
-**No data**
+| Key                                    | Description            | Type     | Default |
+| -------------------------------------- | ---------------------- | -------- | ------- |
+| `vscode-awesome-hex.separator`         | Hex Separator          | `string` | `", "`  |
+| `vscode-awesome-hex.openingDelimiters` | Hex Opening Delimiters | `string` | `""`    |
+| `vscode-awesome-hex.closingDelimiters` | Hex Closing Delimiters | `string` | `""`    |
 
 <!-- configs -->
 

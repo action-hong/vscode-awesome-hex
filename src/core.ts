@@ -1,5 +1,6 @@
-export function prettierHex(str: string) {
+import type { ScopedConfigKeyTypeMap } from './generated/meta'
 
+export function prettierHex(str: string, options: Pick<ScopedConfigKeyTypeMap, 'closingDelimiters' | 'openingDelimiters' | 'separator'>) {
   // 去掉所有空格
   const s = str.replace(/\s/g, '')
 
@@ -10,12 +11,12 @@ export function prettierHex(str: string) {
       res += `0x${s.slice(i, i + 2).toUpperCase()}`
 
       if (i < s.length - 2) {
-        res += ', '
+        res += options.separator
       }
     }
 
-    return res
+    return `${options.openingDelimiters}${res}${options.closingDelimiters}`
   }
 
-  return ''
+  return str
 }

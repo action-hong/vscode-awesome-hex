@@ -46,7 +46,23 @@
     "configuration": {
       "type": "object",
       "title": "vscode-awesome-hex",
-      "properties": {}
+      "properties": {
+        "vscode-awesome-hex.separator": {
+          "type": "string",
+          "default": ", ",
+          "description": "Hex Separator"
+        },
+        "vscode-awesome-hex.openingDelimiters": {
+          "type": "string",
+          "default": "",
+          "description": "Hex Opening Delimiters"
+        },
+        "vscode-awesome-hex.closingDelimiters": {
+          "type": "string",
+          "default": "",
+          "description": "Hex Closing Delimiters"
+        }
+      }
     }
   },
   "scripts": {
